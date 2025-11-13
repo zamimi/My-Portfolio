@@ -1,114 +1,81 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Zamantha | Introduction</title>
-		<link rel="stylesheet" type="text/css" href="design.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
-	</head>
-	<body>
-    	<div class="content">
-    		<!--The Basic Information w/ picture and Biography-->
-		    <div class="flex-container">
-	          <div class="box">
-          		<picture>
-          			<source srcset="images/photo.jpg" media="(min-width: 769px) and (max-width: 3000px)">
-          			<source srcset="images/anophto.png" media="(max-width: 768px)">
-              		<img src="images/photo.jpg" class="itsme">
-          		</picture>
-	          </div>
-	          <div class="box">
-	            	<h2>Basic Information:</h2>
-	              <span>
-	                <b>Name:</b> Zamantha Shane A. Pacanut<br>
-	                <b>Age:</b> 19<br>
-	                <b>Birthday:</b> November 6, 2005<br>
-	                <b>Biography:</b><br> 
-	                A student of University of Science and Technology from the Southern Philippines. A second year student of the course Bachelors of Science in Information Technology. Joining the course for the sole purpose of creating a game, wanting to enjoy the process of programming as well. Looking forward to the learning she will face in this prestigious school, she hopes to be proud of herself for what she is and what she will become.<br></span>
-	                <h4>If you want to know more about Zamantha, bellow is her likes, dislikes and thoughts of her programming teacher. There are also links to her <a href="about.html">interests</a>	              
-	          </div>
-	        </div>
-	        <!--End of The Basic Information w/ picture and Biography-->
-	        <!--Slidshow w/ Java Script-->
-		    <div class="slideshow-container" style="align-items: center">
-				<!-- Full-width images with number and caption text -->
-					<div class="mySlides fade">
-						<div class="numbertext">1 / 3</div>
-							<center><img src="images/img1.png" alt="like" style="width:100%"></center>
-						<div class="text">What I like.</div>
-					</div>
-					<div class="mySlides fade">
-						<div class="numbertext">2 / 3</div>
-							<center><img src="images/img2.png" alt="hate" style="width:100%"></center>
-						<div class="text">What I dislike.</div>
-					</div>
-					<div class="mySlides fade">
-						<div class="numbertext">3 / 3</div>
-							<center><img src="images/img3.png" alt="subject" style="width:100%"></center>
-						<div class="text">My thoughts on the subject.</div>
-					</div>
-				<!-- Next and previous buttons -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<!-- The dots/circles -->
-			<div style="position: relative; top: 86%; left: 48%; margin-bottom: 15px">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
-			</div>
-			<!--End of Slideshow HTML-->
-			<script type="text/javascript">
-				let slideIndex = 1;
-				  showSlides(slideIndex);
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamantha | Developer Portfolio</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-				// Next/previous controls
-				function plusSlides(n) {
-				  showSlides(slideIndex += n);
-				}
+    <header>
+        <div class="container">
+            <h1>Zamantha Shane Pacanut</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-				// Thumbnail image controls
-				function currentSlide(n) {
-				  showSlides(slideIndex = n);
-				}
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Hello! I'm a **Full-Stack Developer** focused on clean, scalable code.</h2>
+            <p>I build intuitive and performant web applications using modern JavaScript frameworks.</p>
+            <a href="#work" class="cta-button">View My Projects</a>
+        </div>
+    </section>
 
-				function showSlides(n) {
-				  let i;
-				  let slides = document.getElementsByClassName("mySlides");
-				  let dots = document.getElementsByClassName("dot");
-				  if (n > slides.length) {slideIndex = 1}
-				  if (n < 1) {slideIndex = slides.length}
-				  for (i = 0; i < slides.length; i++) {
-				    slides[i].style.display = "none";
-				  }
-				  for (i = 0; i < dots.length; i++) {
-				    dots[i].className = dots[i].className.replace(" active", "");
-				  }
-				  slides[slideIndex-1].style.display = "block";
-				  dots[slideIndex-1].className += " active";
-				}
-			</script>
-			<!--End of Slideshow JavaScript. Interests and Hobbies Tables-->
-		</div>
-		<div class="header" id="headerwmotto">
-	  		<p>Zamantha's Motto: "It is what it is"</p>
-			<div class="buttons">
-				<button><a href="index.html">Home</a></button>
-				<button><a href="about.html">Interests</a></button>
-				<button><a href="educ.html">Education</a></button>
-			</div>
-			<div class="socmedlinks">	
-				<a href="https://www.facebook.com/ZamanthaShane.Pacanut" class="fb" target="_blank"><img src="images/facebook.png" width="30"></a>
-				<a href="https://www.instagram.com/kinchohakai1165/" target="_blank"><img src="images/insta.png" width="30"></a>
-				<a href="https://discord.gg/zvn7avdYuj" target="_blank"><img src="images/discord.png" width="30"></a>
-				<a href="https://www.youtube.com/channel/UCqi62T_PrYGJgsDTDXLQ0DQ" target="_blank"><img src="images/yt.png" width="30"></a>
-			</div>
-		</div>
-		<div class="footer">
-  				<p>Bachelor in Science of Information Technology | 2nd Year | USTP</p>
-		</div>
-	</body>
+    <section id="about" class="about">
+        <div class="container">
+            <h3>About Me</h3>
+            <p>I have 5 years of experience developing applications in industries like FinTech and E-commerce. My core expertise includes **React, Node.js, and MongoDB**. I love solving complex problems with efficient and elegant solutions.</p>
+            <div class="skills-list">
+                <h4>Skills:</h4>
+                <span>HTML</span>
+                <span>CSS/Sass</span>
+                <span>JavaScript (ES6+)</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Python</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work">
+        <div class="container">
+            <h3>Featured Projects</h3>
+
+            <div class="project-card">
+                <h4>Project Alpha: E-commerce Platform</h4>
+                <p class="role">Role: Lead Frontend Developer</p>
+                <p>Designed and implemented the responsive UI for a B2C e-commerce site, resulting in a **20% increase in mobile conversion**.</p>
+                <a href="#" target="_blank">View Case Study / Code</a>
+            </div>
+
+            <div class="project-card">
+                <h4>Project Beta: Data Visualization Tool</h4>
+                <p class="role">Role: Full-Stack Developer</p>
+                <p>Built a real-time dashboard using D3.js and a RESTful API. Optimized data fetching to reduce load time by 40%.</p>
+                <a href="#" target="_blank">View Case Study / Code</a>
+            </div>
+            
+            </div>
+    </section>
+
+    <footer id="contact" class="contact">
+        <div class="container">
+            <h3>Get In Touch</h3>
+            <p>I'm currently looking for new opportunities. Feel free to connect!</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">Email Me</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
