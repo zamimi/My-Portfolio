@@ -1,9 +1,9 @@
 /* Base Styles */
 :root {
-    --primary-color: #3498db; /* Blue */
-    --secondary-color: #2c3e50; /* Dark Blue */
+    --primary-color: #7f34db; 
+    --secondary-color: #e1b929; 
     --text-color: #333;
-    --light-bg: #f4f4f4;
+    --light-bg: #ead7d7;
 }
 
 body {
